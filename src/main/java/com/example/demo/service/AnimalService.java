@@ -5,7 +5,7 @@ import com.example.demo.model.Animals;
 import java.util.List;
 
 public interface AnimalService {
-    List<AnimalService> findAllAnimals();
+    List<Animals> findAllAnimals();
     Animals findAllAnimalsById(Long id);
     Animals saveAnimal (Animals a);
 

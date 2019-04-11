@@ -7,17 +7,13 @@ import javax.persistence.*;
 public class Animals {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Long id;
-    private  String name;
-    private  double age;
+    private Long id;
+    private String name;
+    private double age;
+    private String place;
+    private double weight;
 
     public Animals() {
-    }
-
-    public Animals(Long id, String name, double age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
     }
 
     public Long getId() {
@@ -42,5 +38,29 @@ public class Animals {
 
     public void setAge(double age) {
         this.age = age;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public Animals(Long id, String name, double age, String place, double weight) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.place = place;
+        this.weight = weight;
     }
 }

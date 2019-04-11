@@ -18,16 +18,22 @@ public class AnimanBootstrep  implements CommandLineRunner {
         Animals animal = new Animals();
         animal.setName("Панда");
         animal.setAge(2);
+        animal.setPlace("Центральный Китай");
+        animal.setWeight(100);
         animalsRep.save(animal);
 
         Animals animal2 = new Animals();
         animal2.setName("Лев");
         animal2.setAge(7);
+        animal2.setPlace("Африка");
+        animal2.setWeight(190);
         animalsRep.save(animal2);
 
         Animals animal3 = new Animals();
-        animal2.setName("Коала");
-        animal2.setAge(10);
+        animal3.setName("Коала");
+        animal3.setAge(10);
+        animal3.setPlace("Австралия");
+        animal3.setWeight(15);
         animalsRep.save(animal3);
     }
 }
