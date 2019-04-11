@@ -34,6 +34,19 @@ import java.util.List;
             return this.animalService.saveAnimal(a);
         }
 
+        @DeleteMapping("/{id}")
+        public void deleteAnimalById(@PathVariable long id){
+           animalService.deleteAnimalById(id);
+            System.out.println("Удалено!");
+        }
+        @DeleteMapping()
+        public void deleteAll(){
+            animalService.deleteAll();
+        }
+         @PutMapping()
+        public void updateAnimal(@RequestBody Animals a){
+                this.animalService.updateAnimal(a);
+         }
 
 
     }

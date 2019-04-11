@@ -8,5 +8,8 @@ public interface AnimalService {
     List<Animals> findAllAnimals();
     Animals findAllAnimalsById(Long id);
     Animals saveAnimal (Animals a);
+    void deleteAnimalById(Long id);
+    void deleteAll();
+    void updateAnimal(Animals a);
 
 }

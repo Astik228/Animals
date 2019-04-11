@@ -28,4 +28,20 @@ public class AnimalServiceImpl implements  AnimalService {
         return this.animalsRep.save(a);
     }
 
+    @Override
+        public void    deleteAnimalById(Long id){
+   animalsRep.deleteById(id);
+        System.out.println("Удалено!");
+    }
+    @Override
+    public void  deleteAll(){
+        animalsRep.deleteAll();
+        System.out.println("Все удалено!");
+    }
+    @Override
+    public void updateAnimal(Animals a){
+ animalsRep.save(a);
+
+    }
+
 }
