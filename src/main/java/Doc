@@ -1,0 +1,24 @@
+Create - POST : http://localhost:8080/api/v1/animals/
+{
+      "name": "cat",
+        "age": 2,
+        "place": "KGZ",
+        "weight": 10
+    }
+
+Read all - GET : http://localhost:8080/ api/v1/animals/
+
+Get by id - GET : http://localhost:8080/ api/v1/animals/1
+
+ Update - PUT : http://localhost:8080/ api/v1/animals/
+ {
+“id”: 1,
+"name": "Панда",
+"age": 2,
+"place": "Центральный Китай",
+"weight": 100
+},
+ Delete by id - DELETE : http://localhost:8080/ api/v1/animals/1
+
+Delete - DELETE : http://localhost:8080/ api/v1/animals/1
+
