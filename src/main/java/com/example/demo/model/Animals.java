@@ -15,7 +15,6 @@ public class Animals {
 
     public Animals() {
     }
-
     public Long getId() {
         return id;
     }
@@ -47,7 +46,6 @@ public class Animals {
     public void setPlace(String place) {
         this.place = place;
     }
-
     public double getWeight() {
         return weight;
     }

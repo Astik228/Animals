@@ -18,7 +18,6 @@ import java.util.List;
         public AnimalsController(AnimalService animalService) {
             this.animalService=animalService;
         }
-
         @GetMapping
         public List<Animals> getAnimals() {
             return this.animalService.findAllAnimals();

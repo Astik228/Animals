@@ -31,17 +31,16 @@ public class AnimalServiceImpl implements  AnimalService {
     @Override
         public void    deleteAnimalById(Long id){
    animalsRep.deleteById(id);
-        System.out.println("Удалено!");
+      //  System.out.println("Удалено!");
     }
     @Override
     public void  deleteAll(){
         animalsRep.deleteAll();
-        System.out.println("Все удалено!");
+       // System.out.println("Все удалено!");
     }
     @Override
     public void updateAnimal(Animals a){
  animalsRep.save(a);
-
     }
 
 }
